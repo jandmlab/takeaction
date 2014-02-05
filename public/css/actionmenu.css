@@ -30,3 +30,13 @@
 pre { margin-bottom: 1em; }
 
 .footer { color: #999; }
+
+@media (max-width: 767px) {
+  .header { padding: 0; }
+  
+  .header h3 span {
+    float: left !important;
+    font-size: .5em;
+    text-align: left;
+  }
+}
