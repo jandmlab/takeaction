@@ -72,23 +72,30 @@ form action="/your-menu" method="post"
           .col-xs-8.col-sm-10
             select.form-control.actions name="app#{i}"
               option
-              option value="tweetbot" New tweet with link in Tweetbot
-              option value="riposte" New post with Markdown link in Riposte
-              option value="tumblr" New link post with Tumblr
-              option value="instapaper" Bookmark with Instapaper
-              option value="pinswift" Bookmark with Pinswift
-              option value="pincase" Bookmark with Pincase
-              option value="onepassword" Open link in 1Password
-              option value="drafts" New Drafts note with link
-              option value="fantastical" Fantastical reminder with link
-              option value="draftscustom" Trigger Drafts action by name
-              option value="commandcmac" Send link to Mac with Command-C
-              option value="commandciphone" Send link to iPhone with Command-C
-              option value="commandcipad" Send link to iPad with Command-C
-              option value="cleanlinks" Clean a link
-              option value="texttool" Encode link with TextTool
-              option value="itunesaffiliate" Generate iTunes affiliate link
+              option value="cleanlinks" Clean Links: Clean a link
+              option value="commandcmac" Command-C: Send link to Mac
+              option value="commandciphone" Command-C: Send link to iPhone
+              option value="commandcipad" Command-C: Send link to iPad
+              option value="drafts" Drafts: New note with link
+              option value="draftscustom" Drafts: Trigger action by name
+              option value="fantastical" Fantastical: New reminder with link
+              option value="instapaper" Instapaper: Bookmark link
+              option value="itunesaffiliate" Launch Center Pro: Generate iTunes affiliate link
+              option value="onepassword" 1Password: Open link
+              option value="pinswift" Pinswift: Bookmark link
+              option value="pincase" Pincase: Bookmark link
+              option value="pythonista" Pythonista: Trigger script by name
+              option value="riposte" Riposte: New post with Markdown link
+              option value="texttool" TextTool: Encode link
+              option value="tumblr" Tumblr: New link post
+              option value="tweetbot" Tweetbot: New tweet with link
             .notes
+              .pythonista.well
+                ' You'll need to install 
+                a href="https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&at=11ldtz" Pythonista
+                '  to use this action. In order to trigger the right script in Pythonista, enter the name of the script in the box below.
+                input.form-control.solo type="text" placeholder="Pythonista script name" name="pythonistascriptname#{i}"
+              
               .cleanlinks.well
                 ' You'll need to install 
                 a href="https://itunes.apple.com/us/app/clean-links/id623671942?mt=8&at=11ldtz" Clean Links

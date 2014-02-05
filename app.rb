@@ -46,6 +46,7 @@ class ActionMenu < Sinatra::Base
     commandciphone = params["commandciphone#{i}"]
     commandcipad = params["commandcipad#{i}"]
     customdraftsactionname = params["customdraftsactionname#{i}"]
+    pythonistascriptname = params["pythonistascriptname#{i}"]
 
     return_url = "#{emoji} "
     return_url += "Pinswift=pinswift://x-callback-url/add?url={{'+location.href+'}}" if app == 'pinswift'
@@ -60,6 +61,7 @@ class ActionMenu < Sinatra::Base
     return_url += "Riposte=riposte://x-callback-url/createNewPost?text=[{{'+document.title+'}}]({{'+location.href+'}})" if app == 'riposte'
     return_url += "Affiliate Link=launch://clipboard?text=[clipboard]%26at%3D{{#{affiliateid}}}" if app == "itunesaffiliate"
     return_url += "#{customdraftsactionname}=drafts://x-callback-url/create?text={{'+location.href+'}}&action={{#{customdraftsactionname}}}" if app == 'draftscustom'
+    return_url += "#{pythonistascriptname}=pythonista:://{{#{pythonistascriptname}}}?action=run" if app == 'pythonista'
     return_url += "Tweetbot=tweetbot://{{#{twitterhandle}}}/post?text={{'+location.href+'}}" if app == 'tweetbot'
     return_url += "Command-C to Mac=command-c://x-callback-url/copyText?text={{'+window.location+'}}&x-success={{'+window.location+'}}&x-failure={{'+window.location+'}}&deviceName={{#{commandcmac}}}" if app == 'commandcmac'
     return_url += "Command-C to iPhone=command-c://x-callback-url/copyText?text={{'+window.location+'}}&x-success={{'+window.location+'}}&x-failure={{'+window.location+'}}&deviceName={{#{commandciphone}}}" if app == 'commandciphone'
