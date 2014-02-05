@@ -35,25 +35,25 @@ class ActionMenu < Sinatra::Base
     menu_url += "]')"
     menu_url
   end
-  
+
   def build_url_for(i)
     emoji = params["emoji#{i}"]
     app = params["app#{i}"]
-    
+
     twitterhandle = params["twitterhandle#{i}"]
     affiliateid = params["affiliateid#{i}"]
     commandcmac = params["commandcmac#{i}"]
     commandciphone = params["commandciphone#{i}"]
     commandcipad = params["commandcipad#{i}"]
     customdraftsactionname = params["customdraftsactionname#{i}"]
-    
+
     return_url = "#{emoji} "
     return_url += "Pinswift=pinswift://x-callback-url/add?url={{'+location.href+'}}" if app == 'pinswift'
     return_url += "Pincase=pincaseapp://x-callback-url/add?url={{'+location.href+'}}&title={{'+document.title+'}}&noui=yes&later=no" if app == 'pincase'
     return_url += "Reminder=fantastical2://parse?sentence={{'+location.href+'}}&reminder=1" if app == 'fantastical'
     return_url += "Open in 1Password=op'+location.href+'" if app == 'onepassword'
     return_url += "Clean Link=clean-links://x-callback-url/clean?url={{'+location.href+'}}" if app == 'cleanlinks'
-    return_url += "Instapaper=x-callback-instapaper://x-callback-url/add?url={{'+location.href}}" if app == "instapaper"
+    return_url += "Instapaper=x-callback-instapaper://x-callback-url/add?url={{'+location.href+'}}" if app == "instapaper"
     return_url += "Tumblr Link Post=tumblr://x-callback-url/link?title={{'+document.title+'}}&url={{'+location.href+'}}" if app == "tumblr"
     return_url += "Drafts=drafts://x-callback-url/create?text={{'+location.href+'}}" if app == 'drafts'
     return_url += "Encode Link=texttool://x-callback-url/transform?text={{'+location.href+'}}&method=encode&x-success={{launch:}}" if app == "texttool"
