@@ -1,0 +1,188 @@
+form action="/your-menu" method="post"
+  .row
+    .col-xs-12
+      p
+        strong
+          ' Build an action menu for 
+          a href="http://contrast.co/launch-center-pro/" Launch Center Pro 
+          ' that can be activated by a bookmarklet in Safari.
+      p
+      ' Add up to six actions to your menu. Choose an icon for each action. Click the button at the bottom, and BAM, your menu bookmarklet will appear along with instructions for how to install it.
+      p
+      ' You'll need to install Launch Center Pro (for 
+      a href="https://itunes.apple.com/us/app/launch-center-pro/id532016360?mt=8&at=11ldtz" iPhone
+      '  or 
+      a href="https://itunes.apple.com/us/app/launch-center-pro-for-ipad/id799664902?mt=8&at=11ldtz" iPad
+      '), and it would probably help to have a copy of Drafts (for 
+      a href="https://itunes.apple.com/us/app/drafts/id502385074?mt=8&at=11ldtz" iPhone
+      '  or 
+      a href="https://itunes.apple.com/us/app/drafts-for-ipad/id542797283?mt=8&at=11ldtz" iPad
+      '). For more information, check out 
+      a href="http://macstories.net/tutorials/safari-action-menu-in-launch-center-pro/" this article 
+      ' by Federico Viticci at MacStories.
+  .menulist
+    .row
+      .col-xs-12
+        .col-xs-2
+          h3 Icon
+        .col-xs-10
+          h3 Action
+    - 6.times do |i|
+      .row
+        .col-xs-12
+          .form-group
+            .col-xs-2
+              select.form-control name="emoji#{i}"
+                option
+                option 🔵
+                option 📌
+                option ✅
+                option 🔴
+                option 🔒
+                option 🔗
+                option ☕️
+                option 📥
+                option 📤
+                option ✉️
+                option 📅
+                option 📙
+                option 💾
+                option ❤️
+                option 🌟
+                option ✨
+                option ⚪️
+                option ⚫️
+                option ❎
+                option 🔀
+                option 🔄
+                option 🆒
+                option 🆗
+                option 🚗
+                option ✈️
+                option 🇺🇸
+                option 🇬🇧
+                option ✋
+                option 👍
+                option 👎
+                option 😃
+                option 🔥
+                option 💩
+                option 👤
+                option 🐼
+                option 🐶
+                option 🐱
+            .col-xs-10
+              select.form-control.actions name="app#{i}"
+                option
+                option value="tweetbot" New tweet with link in Tweetbot
+                option value="riposte" New post with Markdown link in Riposte
+                option value="tumblr" New link post with Tumblr
+                option value="instapaper" Bookmark with Instapaper
+                option value="pinswift" Bookmark with Pinswift
+                option value="pincase" Bookmark with Pincase
+                option value="onepassword" Open link in 1Password
+                option value="drafts" New Drafts note with link
+                option value="fantastical" Fantastical reminder with link
+                option value="draftscustom" Trigger Drafts action by name
+                option value="commandcmac" Send link to Mac with Command-C
+                option value="commandciphone" Send link to iPhone with Command-C
+                option value="commandcipad" Send link to iPad with Command-C
+                option value="cleanlinks" Clean a link
+                option value="texttool" Encode link with TextTool
+                option value="itunesaffiliate" Generate iTunes affiliate link
+              .notes
+                .cleanlinks.well
+                  ' You'll need to install 
+                  a href="https://itunes.apple.com/us/app/clean-links/id623671942?mt=8&at=11ldtz" Clean Links
+                  '  to use this action.
+                  
+                .texttool.well
+                  ' You'll need to install 
+                  a href="https://itunes.apple.com/us/app/texttool/id751972884?mt=8&at=11ldtz" TextTool
+                  '  to use this action.
+                  
+                .fantastical.well
+                  ' You'll need to install 
+                  a href="https://itunes.apple.com/us/app/fantastical-2-calendar-reminders/id718043190?mt=8&at=11ldtz" Fantastical
+                  '  (iPhone only) to use this action.
+                
+                .tumblr.well
+                  ' You'll need to install 
+                  a href="https://itunes.apple.com/us/app/tumblr/id305343404?mt=8&at=11ldtz" Tumblr
+                  '  to use this action.
+                  
+                .instapaper.well
+                  ' You'll need to install 
+                  a href="https://itunes.apple.com/us/app/instapaper/id288545208?mt=8&at=11ldtz" Instapaper
+                  '  to use this action.
+                
+                .pinswift.well
+                  ' You'll need to install 
+                  a href="https://itunes.apple.com/us/app/pinswift-fast-powerful-pinboard/id766741240?mt=8&at=11ldtz" Pinswift
+                  '  (iPhone only) to use this action.
+                
+                .pincase.well
+                  ' You'll need to install 
+                  a href="https://itunes.apple.com/us/app/pincase-pinboard.in-client/id698220406?mt=8&at=11ldtz" Pincase
+                  '  to use this action.
+                
+                .onepassword.well
+                  ' You'll need to install 
+                  a href="https://itunes.apple.com/us/app/1password-password-manager/id568903335?mt=8&at=11ldtz" 1Password
+                  '  to use this action.
+                
+                .tweetbot.well
+                  ' You'll need to install Tweetbot (for
+                  a href="https://itunes.apple.com/us/app/tweetbot-3-for-twitter-iphone/id722294701?mt=8&at=11ldtz" iPhone
+                  '  or 
+                  a href="https://itunes.apple.com/us/app/tweetbot-for-twitter-ipad/id498801050?mt=8&at=11ldtz" iPad
+                  ' ) to use this action. Tweetbot's URL scheme requires your username. Enter it below so we can generate the URL for you. No data is stored by this application.
+                  .input-group
+                    span.input-group-addon @
+                    input.form-control type="text" placeholder="Username" name="twitterhandle#{i}"
+                    
+                .riposte.well
+                  ' You'll need to install 
+                  a href="https://itunes.apple.com/us/app/riposte-for-app.net/id592316697?mt=8&at=11ldtz" Riposte
+                  '  (iPhone only) to use this action.
+                  
+                .commandcmac.well
+                  ' You'll need to install Command-C for 
+                  a href="https://itunes.apple.com/us/app/command-c/id692787282?mt=12&at=11ldtz" Mac
+                  '  to use this action. In order to target your Mac, enter its name as it appears in Command-C in the box below.
+                  input.form-control.solo type="text" placeholder="Mac's name in Command-C" name="commandcmac#{i}"
+                
+                .commandciphone.well
+                  ' You'll need to install Command-C for 
+                  a href="https://itunes.apple.com/us/app/command-c/id692783673?mt=8&at=11ldtz" iOS
+                  '  to use this action. In order to target your iPhone, enter its name as it appears in Command-C in the box below.
+                  input.form-control.solo type="text" placeholder="iPhone's name in Command-C" name="commandciphone#{i}"
+                
+                .commandcipad.well
+                  ' You'll need to install Command-C for  
+                  a href="https://itunes.apple.com/us/app/command-c/id692783673?mt=8&at=11ldtz" iOS
+                  '  to use this action. In order to target your iPad, enter its name as it appears in Command-C in the box below.
+                  input.form-control.solo type="text" placeholder="iPad's name in Command-C" name="commandcipad#{i}"
+                
+                .itunesaffiliate.well
+                  ' To build your URL, we'll need your affiliate ID. Enter it in the box below. No data is stored by this application.
+                  input.form-control.solo type="text" placeholder="Affiliate ID" name="affiliateid#{i}"
+                
+                .drafts.well
+                  ' You'll need to install Drafts (for 
+                  a href="https://itunes.apple.com/us/app/launch-center-pro/id532016360?mt=8&at=11ldtz" iPhone
+                  '  or 
+                  a href="https://itunes.apple.com/us/app/launch-center-pro-for-ipad/id799664902?mt=8&at=11ldtz" iPad
+                  ') to use this action.
+                
+                .draftscustom.well
+                  ' You'll need to install Drafts (for 
+                  a href="https://itunes.apple.com/us/app/launch-center-pro/id532016360?mt=8&at=11ldtz" iPhone
+                  '  or 
+                  a href="https://itunes.apple.com/us/app/launch-center-pro-for-ipad/id799664902?mt=8&at=11ldtz" iPad
+                  ') to use this action. In order to trigger the right action in Drafts, enter the name of the action in the box below.
+                  input.form-control.solo type="text" placeholder="Drafts action name" name="customdraftsactionname#{i}"
+
+    .form-group.buttons.clearfix
+      .col-xs-offset-2.col-xs-10
+        input.btn.btn-default type="submit" value="Create Menu"

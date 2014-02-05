@@ -1,0 +1,71 @@
+# Logfile created on 2014-02-04 18:30:05 -0800 by logger.rb/41954
+[02/04/14 18:30:05 -0800 bluepolicebox.local (9066)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/14 18:30:05 -0800 bluepolicebox.local (9066)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/14 18:30:05 -0800 bluepolicebox.local (9066)] INFO : Reading configuration from 
+[02/04/14 18:30:05 -0800 bluepolicebox.local (9066)] ERROR : Unable to read configuration file : Is a directory - /Users/jeff/Dropbox/Home/Sites/actionmenu
+[02/04/14 18:30:05 -0800 bluepolicebox.local (9066)] INFO : Enabling the Request Sampler.
+[02/04/14 18:30:05 -0800 bluepolicebox.local (9066)] INFO : Environment: development
+[02/04/14 18:30:05 -0800 bluepolicebox.local (9066)] INFO : No known dispatcher detected.
+[02/04/14 18:30:05 -0800 bluepolicebox.local (9066)] INFO : Application: development
+[02/04/14 18:30:05 -0800 bluepolicebox.local (9066)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[02/04/14 18:30:06 -0800 bluepolicebox.local (9066)] INFO : Installing Net instrumentation
+[02/04/14 18:30:06 -0800 bluepolicebox.local (9066)] INFO : Installing Sinatra instrumentation
+[02/04/14 18:30:06 -0800 bluepolicebox.local (9066)] INFO : Installing deferred Rack instrumentation
+[02/04/14 18:30:06 -0800 bluepolicebox.local (9066)] INFO : Finished instrumentation
+[02/04/14 18:30:06 -0800 bluepolicebox.local (9066)] INFO : Doing deferred dependency-detection before Rack startup
+[02/04/14 18:57:25 -0800 bluepolicebox.local (10625)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/14 18:57:25 -0800 bluepolicebox.local (10625)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/14 18:57:25 -0800 bluepolicebox.local (10625)] INFO : Reading configuration from 
+[02/04/14 18:57:25 -0800 bluepolicebox.local (10625)] ERROR : Unable to read configuration file : Is a directory - /Users/jeff/Dropbox/Home/Sites/actionmenu
+[02/04/14 18:57:25 -0800 bluepolicebox.local (10625)] INFO : Enabling the Request Sampler.
+[02/04/14 18:57:25 -0800 bluepolicebox.local (10625)] INFO : Environment: development
+[02/04/14 18:57:25 -0800 bluepolicebox.local (10625)] INFO : No known dispatcher detected.
+[02/04/14 18:57:25 -0800 bluepolicebox.local (10625)] INFO : Application: development
+[02/04/14 18:57:25 -0800 bluepolicebox.local (10625)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[02/04/14 18:57:27 -0800 bluepolicebox.local (10625)] INFO : Installing Net instrumentation
+[02/04/14 18:57:27 -0800 bluepolicebox.local (10625)] INFO : Installing Sinatra instrumentation
+[02/04/14 18:57:27 -0800 bluepolicebox.local (10625)] INFO : Installing deferred Rack instrumentation
+[02/04/14 18:57:27 -0800 bluepolicebox.local (10625)] INFO : Finished instrumentation
+[02/04/14 18:57:35 -0800 bluepolicebox.local (10625)] INFO : Doing deferred dependency-detection before Rack startup
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : Reading configuration from 
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] ERROR : Unable to read configuration file : Is a directory - /Users/jeff/Dropbox/Home/Sites/actionmenu
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : Enabling the Request Sampler.
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : Environment: development
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : No known dispatcher detected.
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : Application: development
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : Installing Net instrumentation
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : Installing Sinatra instrumentation
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : Installing deferred Rack instrumentation
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : Finished instrumentation
+[02/04/14 19:24:49 -0800 bluepolicebox.local (11160)] INFO : Doing deferred dependency-detection before Rack startup
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : Reading configuration from 
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] ERROR : Unable to read configuration file : Is a directory - /Users/jeff/Dropbox/Home/Sites/actionmenu
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : Enabling the Request Sampler.
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : Environment: development
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : No known dispatcher detected.
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : Application: development
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : Installing Net instrumentation
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : Installing Sinatra instrumentation
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : Installing deferred Rack instrumentation
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : Finished instrumentation
+[02/04/14 19:33:28 -0800 bluepolicebox.local (11314)] INFO : Doing deferred dependency-detection before Rack startup
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : Starting the New Relic agent in "development" environment.
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : Reading configuration from 
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] ERROR : Unable to read configuration file : Is a directory - /Users/jeff/Dropbox/Home/Sites/actionmenu
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : Enabling the Request Sampler.
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : Environment: development
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : No known dispatcher detected.
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : Application: development
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : Installing Net instrumentation
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : Installing Sinatra instrumentation
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : Installing deferred Rack instrumentation
+[02/04/14 20:05:07 -0800 bluepolicebox.local (11621)] INFO : Finished instrumentation
+[02/04/14 20:05:08 -0800 bluepolicebox.local (11621)] INFO : Doing deferred dependency-detection before Rack startup

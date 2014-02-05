@@ -1,0 +1,28 @@
+.row
+  .col-xs-12
+    h3 Your Menu
+
+    p
+      pre = @menu_url
+
+.row
+  .col-xs-12
+    h3 How to install using an iPhone or iPad
+  .col-xs-12
+    p 1. Copy your menu's URL (everything in the gray box above).
+  .col-xs-12
+    p 2. Bookmark this page.
+  .col-xs-12
+    p
+      ' 3. Edit the bookmark, and replace 
+      code http://takeaction.herokuapp.com/your-menu
+      '  with your menu's URL.
+
+.row
+  .col-xs-12
+    h3 How to install using a Mac
+  .col-xs-12
+    p
+      ' 1. Drag this button to your favorites bar.
+      .menu-button
+        a.btn.btn-success role="button" href="#{@menu_url}" Actions

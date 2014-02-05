@@ -1,0 +1,32 @@
+.header { margin-bottom: 1em; }
+
+.header h3 span {
+  font-size: .6em;
+  font-weight: normal;
+  text-align: right;
+}
+
+.menulist {
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+.menulist .row { margin-bottom: 1em; }
+
+.notes { margin-top: .8em; }
+
+.notes .well {
+  color: #666;
+  padding: 10px;
+}
+
+.notes .well .input-group,
+.notes .well .solo {
+  margin-top: 10px;
+}
+
+.buttons { margin-top: 2em; }
+
+pre { margin-bottom: 1em; }
+
+.footer { color: #999; }

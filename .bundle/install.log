@@ -1,0 +1,8 @@
+# Logfile created on 2014-02-04 18:29:55 -0800 by logger.rb/41954
+I, [2014-02-04T18:29:55.143047 #8903]  INFO -- : 0:  rack (1.5.2) from /Users/jeff/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/specifications/rack-1.5.2.gemspec
+I, [2014-02-04T18:29:55.143759 #8903]  INFO -- : 0:  puma (2.7.1) from /Users/jeff/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/specifications/puma-2.7.1.gemspec
+I, [2014-02-04T18:29:56.777553 #8903]  INFO -- : 0:  sinatra (1.0) from /Users/jeff/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/specifications/sinatra-1.0.gemspec
+I, [2014-02-04T18:29:56.778282 #8903]  INFO -- : 0:  temple (0.6.7) from /Users/jeff/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/specifications/temple-0.6.7.gemspec
+I, [2014-02-04T18:29:59.794918 #8903]  INFO -- : 0:  tilt (2.0.0) from /Users/jeff/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/specifications/tilt-2.0.0.gemspec
+I, [2014-02-04T18:29:59.796110 #8903]  INFO -- : 0:  slim (2.0.2) from /Users/jeff/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/specifications/slim-2.0.2.gemspec
+I, [2014-02-04T18:29:59.796793 #8903]  INFO -- : 0:  bundler (1.5.1) from /Users/jeff/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/specifications/bundler-1.5.1.gemspec
