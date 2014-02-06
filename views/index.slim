@@ -48,6 +48,7 @@ form action="/your-menu" method="post"
               option ❤️
               option 🌟
               option ✨
+              option 🐍
               option ⚪️
               option ⚫️
               option ❎
@@ -70,7 +71,7 @@ form action="/your-menu" method="post"
               option 🐶
               option 🐱
           .col-xs-8.col-sm-10
-            select.form-control.actions name="app#{i}"
+            select.form-control.actions data-placeholder="Choose an action" name="app#{i}"
               option
               option value="cleanlinks" Clean Links: Clean a link
               option value="commandcmac" Command-C: Send link to Mac
@@ -93,7 +94,9 @@ form action="/your-menu" method="post"
               .pythonista.well
                 ' You'll need to install 
                 a href="https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&at=11ldtz" Pythonista
-                '  to use this action. In order to trigger the right script in Pythonista, enter the name of the script in the box below.
+                '  to use this action. In order to trigger the right script in Pythonista, enter the name of the script in the box below. The URL will be available to your script as 
+                code sys.argv[1]
+                ' .
                 input.form-control.solo type="text" placeholder="Pythonista script name" name="pythonistascriptname#{i}"
               
               .cleanlinks.well
