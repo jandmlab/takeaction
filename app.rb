@@ -42,6 +42,7 @@ class ActionMenu < Sinatra::Base
 
     twitterhandle = params["twitterhandle#{i}"]
     affiliateid = params["affiliateid#{i}"]
+    clearlist = params["clearlist#{i}"]
     commandcmac = params["commandcmac#{i}"]
     commandciphone = params["commandciphone#{i}"]
     commandcipad = params["commandcipad#{i}"]
@@ -49,6 +50,7 @@ class ActionMenu < Sinatra::Base
     pythonistascriptname = params["pythonistascriptname#{i}"]
 
     return_url = "#{emoji} "
+    return_url += "Clear=clearapp://task/create?listName={{#{clearlist}}}&listPosition=&taskName={{Check out '+location.href+'}}&taskPosition=Top" if app == 'clear'
     return_url += "Pinswift=pinswift://x-callback-url/add?url={{'+location.href+'}}" if app == 'pinswift'
     return_url += "Pincase=pincaseapp://x-callback-url/add?url={{'+location.href+'}}&title={{'+document.title+'}}&noui=yes&later=no" if app == 'pincase'
     return_url += "Pinner=pinner://bookmark?href={{'+location.href+'}}&title={{'+document.title+'}}" if app == 'pinner'
@@ -60,7 +62,6 @@ class ActionMenu < Sinatra::Base
     return_url += "Drafts=drafts://x-callback-url/create?text={{'+location.href+'}}" if app == 'drafts'
     return_url += "Encode Link=texttool://x-callback-url/transform?text={{'+location.href+'}}&method=encode&x-success={{launch:}}" if app == "texttool"
     return_url += "Riposte=riposte://x-callback-url/createNewPost?text=[{{'+document.title+'}}]({{'+location.href+'}})" if app == 'riposte'
-    return_url += "Affiliate Link=launch://clipboard?text=[clipboard]%26at%3D{{#{affiliateid}}}" if app == "itunesaffiliate"
     return_url += "#{customdraftsactionname}=drafts://x-callback-url/create?text={{'+location.href+'}}&action={{#{customdraftsactionname}}}" if app == 'draftscustom'
     return_url += "#{pythonistascriptname}=pythonista://{{#{pythonistascriptname}}}?action=run&args={{'+location.href+'}}" if app == 'pythonista'
     return_url += "Tweetbot=tweetbot://{{#{twitterhandle}}}/post?text={{'+location.href+'}}" if app == 'tweetbot'
