@@ -3,23 +3,31 @@ form action="/your-menu" method="post"
     .col-xs-12
       p
         strong
-          ' Build an action menu for 
-          a href="http://contrast.co/launch-center-pro/" Launch Center Pro 
+          ' Build an action menu for
+          a href="http://contrast.co/launch-center-pro/" Launch Center Pro
           ' that can be activated by a bookmarklet in Safari.
       p
       ' Add up to six actions to your menu. Choose an icon for each action. Click the button at the bottom, and BAM, your menu bookmarklet will appear along with instructions for how to install it.
       p
-      ' You'll need to install Launch Center Pro (for 
+      ' You'll need to install Launch Center Pro (for
       a href="https://itunes.apple.com/us/app/launch-center-pro/id532016360?mt=8&at=11lsTn" iPhone
-      '  or 
+      '  or
       a href="https://itunes.apple.com/us/app/launch-center-pro-for-ipad/id799664902?mt=8&at=11lsTn" iPad
-      '), and it would probably help to have a copy of Drafts (for 
+      '), and it would probably help to have a copy of Drafts (for
       a href="https://itunes.apple.com/us/app/drafts/id502385074?mt=8&at=11lsTn" iPhone
-      '  or 
+      '  or
       a href="https://itunes.apple.com/us/app/drafts-for-ipad/id542797283?mt=8&at=11lsTn" iPad
-      '). For more information, check out 
-      a href="http://macstories.net/tutorials/safari-action-menu-in-launch-center-pro/" this article 
+      '). For more information, check out
+      a href="http://macstories.net/tutorials/safari-action-menu-in-launch-center-pro/" this article
       ' by Federico Viticci at MacStories.
+  .row.news
+    .col-xs-12.alert.alert-info
+      strong 2014-02-15:
+      '  TAKE ACTION now supports
+      a href="https://itunes.apple.com/us/app/id689989355?mt=8&at=11lsTn" Clear+
+      '  and
+      a href="https://itunes.apple.com/us/app/pushpin-for-pinboard/id548052590?mt=8&at=11lsTn" Pushpin
+      ' .
   .menulist
     .row
       .col-xs-4.col-sm-2
@@ -74,7 +82,7 @@ form action="/your-menu" method="post"
             select.form-control.actions data-placeholder="Choose an action" name="app#{i}"
               option
               option value="cleanlinks" Clean Links: Clean a link
-              option value="clear" Clear: Add todo to list
+              option value="clear" Clear+: Add todo to list
               option value="commandcmac" Command-C: Send link to Mac
               option value="commandciphone" Command-C: Send link to iPhone
               option value="commandcipad" Command-C: Send link to iPad
@@ -86,6 +94,7 @@ form action="/your-menu" method="post"
               option value="pincase" Pincase: Bookmark link
               option value="pinner" Pinner: Bookmark link
               option value="pinswift" Pinswift: Bookmark link
+              option value="pushpin" Pushpin: Bookmark link
               option value="pythonista" Pythonista: Trigger script by name
               option value="riposte" Riposte: New post with Markdown link
               option value="texttool" TextTool: Encode link
@@ -93,111 +102,116 @@ form action="/your-menu" method="post"
               option value="tweetbot" Tweetbot: New tweet with link
             .notes
               .clear.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/id689989355?mt=8&at=11lsTn" Clear+
                 '  to use this action. In order to add the todo to the right list, enter the name of the list in the box below.
                 input.form-control.solo type="text" placeholder="Clear list name" name="clearlist#{i}"
               .pythonista.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/pythonista/id528579881?mt=8&at=11lsTn" Pythonista
-                '  to use this action. In order to trigger the right script in Pythonista, enter the name of the script in the box below. The URL will be available to your script as 
+                '  to use this action. In order to trigger the right script in Pythonista, enter the name of the script in the box below. The URL will be available to your script as
                 code sys.argv[1]
                 ' .
                 input.form-control.solo type="text" placeholder="Pythonista script name" name="pythonistascriptname#{i}"
-              
+
               .cleanlinks.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/clean-links/id623671942?mt=8&at=11lsTn" Clean Links
                 '  to use this action.
-                
+
               .texttool.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/texttool/id751972884?mt=8&at=11lsTn" TextTool
                 '  to use this action.
-                
+
               .fantastical.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/fantastical-2-calendar-reminders/id718043190?mt=8&at=11lsTn" Fantastical
                 '  (iPhone only) to use this action.
-              
+
               .tumblr.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/tumblr/id305343404?mt=8&at=11lsTn" Tumblr
                 '  to use this action.
-                
+
               .instapaper.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/instapaper/id288545208?mt=8&at=11lsTn" Instapaper
                 '  to use this action.
-              
+
               .pinswift.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/pinswift-fast-powerful-pinboard/id766741240?mt=8&at=11lsTn" Pinswift
                 '  (iPhone only) to use this action.
-              
+
               .pincase.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/pincase-pinboard.in-client/id698220406?mt=8&at=11lsTn" Pincase
                 '  to use this action.
-                
+
               .pinner.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/pinner-for-pinboard/id591613202?mt=8&at=11lsTn" Pinner
                 '  to use this action.
-              
+
+              .pushpin.well
+                ' You'll need to install
+                a href="https://itunes.apple.com/us/app/pushpin-for-pinboard/id548052590?mt=8&at=11lsTn" Pushpin
+                '  to use this action.
+
               .onepassword.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/1password-password-manager/id568903335?mt=8&at=11lsTn" 1Password
                 '  to use this action.
-              
+
               .tweetbot.well
                 ' You'll need to install Tweetbot (for
                 a href="https://itunes.apple.com/us/app/tweetbot-3-for-twitter-iphone/id722294701?mt=8&at=11lsTn" iPhone
-                '  or 
+                '  or
                 a href="https://itunes.apple.com/us/app/tweetbot-for-twitter-ipad/id498801050?mt=8&at=11lsTn" iPad
                 ' ) to use this action. Tweetbot's URL scheme requires your username. Enter it below so we can generate the URL for you. No data is stored by this application.
                 .input-group
                   span.input-group-addon @
                   input.form-control type="text" placeholder="Username" name="twitterhandle#{i}"
-                  
+
               .riposte.well
-                ' You'll need to install 
+                ' You'll need to install
                 a href="https://itunes.apple.com/us/app/riposte-for-app.net/id592316697?mt=8&at=11lsTn" Riposte
                 '  (iPhone only) to use this action.
-                
+
               .commandcmac.well
-                ' You'll need to install Command-C for 
+                ' You'll need to install Command-C for
                 a href="https://itunes.apple.com/us/app/command-c/id692787282?mt=12&at=11lsTn" Mac
                 '  to use this action. In order to target your Mac, enter its name as it appears in Command-C in the box below.
                 input.form-control.solo type="text" placeholder="Mac's name in Command-C" name="commandcmac#{i}"
-              
+
               .commandciphone.well
-                ' You'll need to install Command-C for 
+                ' You'll need to install Command-C for
                 a href="https://itunes.apple.com/us/app/command-c/id692783673?mt=8&at=11lsTn" iOS
                 '  to use this action. In order to target your iPhone, enter its name as it appears in Command-C in the box below.
                 input.form-control.solo type="text" placeholder="iPhone's name in Command-C" name="commandciphone#{i}"
-              
+
               .commandcipad.well
-                ' You'll need to install Command-C for  
+                ' You'll need to install Command-C for
                 a href="https://itunes.apple.com/us/app/command-c/id692783673?mt=8&at=11lsTn" iOS
                 '  to use this action. In order to target your iPad, enter its name as it appears in Command-C in the box below.
                 input.form-control.solo type="text" placeholder="iPad's name in Command-C" name="commandcipad#{i}"
-              
+
               .itunesaffiliate.well
                 ' To build your URL, we'll need your affiliate ID. Enter it in the box below. No data is stored by this application.
                 input.form-control.solo type="text" placeholder="Affiliate ID" name="affiliateid#{i}"
-              
+
               .drafts.well
-                ' You'll need to install Drafts (for 
+                ' You'll need to install Drafts (for
                 a href="https://itunes.apple.com/us/app/launch-center-pro/id532016360?mt=8&at=11lsTn" iPhone
-                '  or 
+                '  or
                 a href="https://itunes.apple.com/us/app/launch-center-pro-for-ipad/id799664902?mt=8&at=11lsTn" iPad
                 ') to use this action.
-              
+
               .draftscustom.well
-                ' You'll need to install Drafts (for 
+                ' You'll need to install Drafts (for
                 a href="https://itunes.apple.com/us/app/launch-center-pro/id532016360?mt=8&at=11lsTn" iPhone
-                '  or 
+                '  or
                 a href="https://itunes.apple.com/us/app/launch-center-pro-for-ipad/id799664902?mt=8&at=11lsTn" iPad
                 ') to use this action. In order to trigger the right action in Drafts, enter the name of the action in the box below.
                 input.form-control.solo type="text" placeholder="Drafts action name" name="customdraftsactionname#{i}"

@@ -11,6 +11,8 @@
   padding: 0;
 }
 
+.news { margin-top: 1.5em; }
+
 .menulist .row { margin-bottom: 1em; }
 
 .notes { margin-top: .8em; }
@@ -33,7 +35,7 @@ pre { margin-bottom: 1em; }
 
 @media (max-width: 767px) {
   .header { padding: 0; }
-  
+
   .header h3 span {
     float: left !important;
     font-size: .5em;

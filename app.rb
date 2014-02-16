@@ -41,7 +41,6 @@ class ActionMenu < Sinatra::Base
     app = params["app#{i}"]
 
     twitterhandle = params["twitterhandle#{i}"]
-    affiliateid = params["affiliateid#{i}"]
     clearlist = params["clearlist#{i}"]
     commandcmac = params["commandcmac#{i}"]
     commandciphone = params["commandciphone#{i}"]
@@ -54,6 +53,7 @@ class ActionMenu < Sinatra::Base
     return_url += "Pinswift=pinswift://x-callback-url/add?url={{'+location.href+'}}" if app == 'pinswift'
     return_url += "Pincase=pincaseapp://x-callback-url/add?url={{'+location.href+'}}&title={{'+document.title+'}}&noui=yes&later=no" if app == 'pincase'
     return_url += "Pinner=pinner://bookmark?href={{'+location.href+'}}&title={{'+document.title+'}}" if app == 'pinner'
+    return_url += "Pushpin=pushpin://x-callback-url/add?url={{'+location.href+'}}&title={{'+document.title+'}}" if app == 'pushpin'
     return_url += "Reminder=fantastical2://parse?sentence={{'+location.href+'}}&reminder=1" if app == 'fantastical'
     return_url += "Open in 1Password=op'+location.href+'" if app == 'onepassword'
     return_url += "Clean Link=clean-links://x-callback-url/clean?url={{'+location.href+'}}" if app == 'cleanlinks'
