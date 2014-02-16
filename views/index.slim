@@ -29,9 +29,13 @@ form action="/your-menu" method="post"
         '  and
         a href="https://itunes.apple.com/us/app/things-for-ipad/id364365411?mt=8&at=11lsTn" iPad
         ' ),
-        a href="https://itunes.apple.com/us/app/id689989355?mt=8&at=11lsTn" Clear+
-        '  , and
-        a href="https://itunes.apple.com/us/app/pushpin-for-pinboard/id548052590?mt=8&at=11lsTn" Pushpin
+        a href="https://itunes.apple.com/us/app/due/id390017969?mt=8&at=11lsTn" Due
+        ' , 
+        a href="http://itunes.apple.com/gb/app/buffer/id490474324?mt=8&at=11lsTn" Buffer
+        ' , 
+        a href="https://itunes.apple.com/us/app/2-days/id476810732?ls=1&mt=8&at=11lsTn" 2 Days
+        ' , and 
+        a href="https://itunes.apple.com/us/app/taskagent-3-for-dropbox/id706250972?mt=8&at=11lsTn" Task Agent
         ' .
   .menulist
     .row
@@ -50,6 +54,17 @@ form action="/your-menu" method="post"
               option
               == slim :app_options
             .notes
+              .twodays.well
+                ' You'll need to install
+                a href="https://itunes.apple.com/us/app/2-days/id476810732?ls=1&mt=8&at=11lsTn" 2 Days
+                '  to use this action. In order to add the todo to the right page, enter the name of the page in the box below.
+                input.form-control.solo type="text" placeholder="2 Days page name" name="twodayspage#{i}"
+              
+              .buffer.well
+                ' You'll need to install
+                a href="http://itunes.apple.com/gb/app/buffer/id490474324?mt=8&at=11lsTn" Buffer
+                '  (iPhone only) to use this action.
+                
               .cleanlinks.well
                 ' You'll need to install
                 a href="https://itunes.apple.com/us/app/clean-links/id623671942?mt=8&at=11lsTn" Clean Links
@@ -93,7 +108,12 @@ form action="/your-menu" method="post"
                 a href="https://itunes.apple.com/us/app/launch-center-pro-for-ipad/id799664902?mt=8&at=11lsTn" iPad
                 ') to use this action. In order to trigger the right action in Drafts, enter the name of the action in the box below.
                 input.form-control.solo type="text" placeholder="Drafts action name" name="customdraftsactionname#{i}"
-
+              
+              .due.well
+                ' You'll need to install
+                a href="https://itunes.apple.com/us/app/due/id390017969?mt=8&at=11lsTn" Due
+                '  to use this action.
+                
               .fantastical.well
                 ' You'll need to install
                 a href="https://itunes.apple.com/us/app/fantastical-2-calendar-reminders/id718043190?mt=8&at=11lsTn" Fantastical
@@ -141,6 +161,12 @@ form action="/your-menu" method="post"
                 ' You'll need to install
                 a href="https://itunes.apple.com/us/app/riposte-for-app.net/id592316697?mt=8&at=11lsTn" Riposte
                 '  (iPhone only) to use this action.
+              
+              .taskagent.well
+                ' You'll need to install
+                a href="https://itunes.apple.com/us/app/taskagent-3-for-dropbox/id706250972?mt=8&at=11lsTn" Task Agent
+                '  to use this action. In order to add the todo to the right list, enter the name of the list in the box below.
+                input.form-control.solo type="text" placeholder="Task Agent list name" name="taskagentlist#{i}"
 
               .texttool.well
                 ' You'll need to install

@@ -1,5 +1,5 @@
 class AppData
-  FIELDS = [:app, :emoji, :twitterhandle, :clearlist, :commandcmac, :commandciphone, :commandcipad, :customdraftsactionname, :pythonistascriptname]
+  FIELDS = [:app, :emoji, :twitterhandle, :clearlist, :commandcmac, :commandciphone, :commandcipad, :customdraftsactionname, :pythonistascriptname, :twodayspage, :taskagentlist]
   FIELDS.each do |field|
     attr_accessor field
   end
@@ -18,13 +18,16 @@ class AppData
   
   def url_schemes
     {
+      twodays: "2 Days=twodays://x-callback-url/add?page={{#{twodayspage}}}&text={{Check out '+document.title+': '+location.href+'}}",
+      buffer: "Buffer=bufferapp://?u={{'+location.href+'}}",
       cleanlinks: "Clean Link=clean-links://x-callback-url/clean?url={{'+location.href+'}}",
-      clear: "Clear=clearapp://task/create?listName={{#{clearlist}}}&listPosition=&taskName={{Check out '+location.href+'}}&taskPosition=Top",
+      clear: "Clear=clearapp://task/create?listName={{#{clearlist}}}&listPosition=&taskName={{Check out '+document.title+': '+location.href+'}}&taskPosition=Top",
       commandcipad: "Command-C to iPad=command-c://x-callback-url/copyText?text={{'+window.location+'}}&x-success={{'+window.location+'}}&x-failure={{'+window.location+'}}&deviceName={{#{commandcipad}}}",
       commandciphone: "Command-C to iPhone=command-c://x-callback-url/copyText?text={{'+window.location+'}}&x-success={{'+window.location+'}}&x-failure={{'+window.location+'}}&deviceName={{#{commandciphone}}}",
       commandcmac: "Command-C to Mac=command-c://x-callback-url/copyText?text={{'+window.location+'}}&x-success={{'+window.location+'}}&x-failure={{'+window.location+'}}&deviceName={{#{commandcmac}}}",
       drafts: "Drafts=drafts://x-callback-url/create?text={{'+location.href+'}}",
       draftscustom: "#{customdraftsactionname}=drafts://x-callback-url/create?text={{'+location.href+'}}&action={{#{customdraftsactionname}}}",
+      due: "Due=due://x-callback-url/add?title={{Check out '+document.title+': '+location.href+'}}",
       fantastical: "Reminder=fantastical2://parse?sentence={{'+location.href+'}}&reminder=1",
       instapaper: "Instapaper=x-callback-instapaper://x-callback-url/add?url={{'+location.href+'}}",
       onepassword: "Open in 1Password=op'+location.href+'",
@@ -34,6 +37,7 @@ class AppData
       pushpin: "Pushpin=pushpin://x-callback-url/add?url={{'+location.href+'}}&title={{'+document.title+'}}",
       pythonista: "#{pythonistascriptname}=pythonista://{{#{pythonistascriptname}}}?action=run&args={{'+location.href+'}}",
       riposte: "Riposte=riposte://x-callback-url/createNewPost?text=[{{'+document.title+'}}]({{'+location.href+'}})",
+      taskagent: "Task Agent=taskagent://x-callback-url/action?list={{#{taskagentlist}}}&task={{Check out '+document.title+': '+location.href+'}}",
       texttool: "Encode Link=texttool://x-callback-url/transform?text={{'+location.href+'}}&method=encode&x-success={{launch:}}",
       things: "Things=things://add?title={{Check out '+document.title+'}}&notes={{'+location.href+'}}",
       tumblr: "Tumblr Link Post=tumblr://x-callback-url/link?title={{'+document.title+'}}&url={{'+location.href+'}}",
