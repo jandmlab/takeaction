@@ -30,7 +30,7 @@ class ActionMenu < Sinatra::Base
   end
 
   def build_menu_url(urls)
-    menu_url = "javascript:window.location='launch://?url='+encodeURIComponent('launch://?url=[list:URL: '+location.href+'|"
+    menu_url = "javascript:t=document.title.replace(/\\|/g, '-');window.location='launch://?url='+encodeURIComponent('launch://?url=[list:URL: '+location.href+'|"
     menu_url += urls.join('|')
     menu_url += "]')"
   end
