@@ -39,7 +39,7 @@ class AppData
       riposte: "Riposte=riposte://x-callback-url/createNewPost?text=[{{'+document.title+'}}]({{'+location.href+'}})",
       taskagent: "Task Agent=taskagent://x-callback-url/action?list={{#{taskagentlist}}}&task={{Check out '+document.title+': '+location.href+'}}",
       texttool: "Encode Link=texttool://x-callback-url/transform?text={{'+location.href+'}}&method=encode&x-success={{launch:}}",
-      things: "Things=things://add?title={{Check out '+document.title+'}}&notes={{'+location.href+'}}",
+      things: "Things=things:add?title={{Check out '+document.title+'}}&notes={{'+location.href+'}}",
       tumblr: "Tumblr Link Post=tumblr://x-callback-url/link?title={{'+document.title+'}}&url={{'+location.href+'}}",
       tweetbot: "Tweetbot=tweetbot://{{#{twitterhandle}}}/post?text={{'+location.href+'}}"
     }
