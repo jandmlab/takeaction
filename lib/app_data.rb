@@ -4,7 +4,7 @@ class AppData
     :commandciphone, :commandcipad, :customdraftsactionname, 
     :pythonistascriptname, :twodayspage, :taskagentlist, 
     :twodaysprefix, :clearprefix, :dueprefix, :fantasticalprefix, 
-    :taskagentprefix, :thingsprefix
+    :omnifocusprefix, :taskagentprefix, :thingsprefix
   ]
   
   FIELDS.each do |field|
@@ -35,8 +35,9 @@ class AppData
       drafts: "Drafts=drafts://x-callback-url/create?text={{'+location.href+'}}",
       draftscustom: "#{customdraftsactionname}=drafts://x-callback-url/create?text={{'+location.href+'}}&action={{#{customdraftsactionname}}}",
       due: "Due=due://x-callback-url/add?title={{#{dueprefix}'+t+': '+location.href+'}}",
-      fantastical: "Reminder=fantastical2://parse?sentence={{#{fantasticalprefix}'+t+': '+location.href+'}}&reminder=1",
+      fantastical: "Fantastical=fantastical2://parse?sentence={{#{fantasticalprefix}'+t+': '+location.href+'}}&reminder=1",
       instapaper: "Instapaper=x-callback-instapaper://x-callback-url/add?url={{'+location.href+'}}",
+      omnifocus: "OmniFocus=omnifocus:///add?name={{#{omnifocusprefix}'+t+'}}&note={{'+location.href+'}}",
       onepassword: "Open in 1Password=op'+location.href+'",
       pincase: "Pincase=pincaseapp://x-callback-url/add?url={{'+location.href+'}}&title={{'+t+'}}&noui=yes&later=no",
       pinner: "Pinner=pinner://bookmark?href={{'+location.href+'}}&title={{'+t+'}}",

@@ -35,7 +35,7 @@ form action="/your-menu" method="post"
         h3 Icon
       .col-xs-8.col-sm-10
         h3 Action
-    - 6.times do |i|
+    - 8.times do |i|
       .row
         .form-group
           .col-xs-4.col-sm-2
@@ -138,6 +138,18 @@ form action="/your-menu" method="post"
                 ' You'll need to install
                 a href="https://itunes.apple.com/us/app/instapaper/id288545208?mt=8&at=11lsTn" Instapaper
                 '  to use this action.
+
+              .omnifocus.well
+                ' You'll need to install OmniFocus (for
+                a href="https://itunes.apple.com/us/app/omnifocus-2-for-iphone/id690305341?mt=8&at=11lsTn" iPhone
+                '  or
+                a href="https://itunes.apple.com/us/app/omnifocus-for-ipad/id383804552?mt=8&at=11lsTn" iPad
+                ') to use this action. Use the field below to adjust the text that appears before the todo.
+                input.form-control.solo.prefix type="text" placeholder="Reminder prefix text" value="Check out " name="omnifocusprefix#{i}"
+                .note
+                  span.label.label-info 
+                    span.prefix-preview Check out 
+                    ' [page title]: [page URL]
 
               .onepassword.well
                 ' You'll need to install

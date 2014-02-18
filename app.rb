@@ -23,7 +23,7 @@ class ActionMenu < Sinatra::Base
 
   def gather_urls
     urls = []
-    6.times do |i|
+    8.times do |i|
       urls << build_url_for_app_at_index(i) unless params["app#{i}"].empty?
     end
     urls
