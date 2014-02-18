@@ -38,6 +38,12 @@ pre { margin-bottom: 1em; }
   margin-top: 2em;
 }
 
+.note {
+  color: #999;
+  display: inline-block;
+  margin-top: .8em;
+}
+
 @media (max-width: 767px) {
   .header { padding: 0; }
 
