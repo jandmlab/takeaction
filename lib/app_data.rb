@@ -35,6 +35,7 @@ class AppData
       drafts: "Drafts=drafts://x-callback-url/create?text={{'+location.href+'}}",
       draftscustom: "#{customdraftsactionname}=drafts://x-callback-url/create?text={{'+location.href+'}}&action={{#{customdraftsactionname}}}",
       due: "Due=due://x-callback-url/add?title={{#{dueprefix}'+t+': '+location.href+'}}",
+      editorial: "Editorial=editorial://?command=SimpleURL&input={{'+location.href+'}}",
       fantastical: "Fantastical=fantastical2://parse?sentence={{#{fantasticalprefix}'+t+': '+location.href+'}}&reminder=1",
       instapaper: "Instapaper=x-callback-instapaper://x-callback-url/add?url={{'+location.href+'}}",
       omnifocus: "OmniFocus=omnifocus:///add?name={{#{omnifocusprefix}'+t+'}}&note={{'+location.href+'}}",
