@@ -39,7 +39,7 @@ class AppData
       fantastical: "Fantastical=fantastical2://parse?sentence={{#{fantasticalprefix}'+t+': '+l+'}}&reminder=1",
       instapaper: "Instapaper=x-callback-instapaper://x-callback-url/add?url={{'+l+'}}",
       omnifocus: "OmniFocus=omnifocus:///add?name={{#{omnifocusprefix}'+t+'}}&note={{'+l+'}}",
-      onepassword: "Open in 1Password=op{{'+l+'}}",
+      onepassword: "Open in 1Password=op'+l+'",
       pincase: "Pincase=pincaseapp://x-callback-url/add?url={{'+l+'}}&title={{'+t+'}}&noui=yes&later=no",
       pinner: "Pinner=pinner://bookmark?href={{'+l+'}}&title={{'+t+'}}",
       pinswift: "Pinswift=pinswift://x-callback-url/add?url={{'+l+'}}",
